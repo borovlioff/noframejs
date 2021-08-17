@@ -17,12 +17,30 @@ Put in the render function the implementation of creating your component
 import { Element } from "./Element";
 
 export class HelloElement extends Element {
-render(){
+ render(){
  this.node = document.createElement(`h3`);
  this.node.textContent = `Hello`;
  
  return this.node;
-}
+ }
 }
 ```
-> Важно! Кнопку добавления в избранное стоит размещать внутри формы продукта.
+
+Now, when calling render, an element will be returned, which can be inserted into the DOM.
+Also, we can reRender element.
+> reRender delete all children's and main node, so all external lisener necessary sign again
+
+```html
+
+<html>
+ <title>Element</title>
+<head>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module">
+      import {HelloElement} from './HelloElement';
+      document.body.append(HelloElement().render());
+    </script>
+</body>
+</html>
