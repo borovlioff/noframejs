@@ -1,7 +1,7 @@
 # Element
  A simple element that turns into html, with the function of preloading data, and reloading html
 
-##How to use?
+## How to use?
 Import the main class and inherit into your component.
 
 ```js
