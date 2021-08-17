@@ -40,7 +40,8 @@ Also, we can reRender element.
     <div id="app"></div>
     <script type="module">
       import {HelloElement} from './HelloElement';
-      document.body.append(HelloElement().render());
+      let app = document.querySelector('#app');
+      app.append(HelloElement().render());
     </script>
 </body>
 </html>
