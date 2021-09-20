@@ -77,7 +77,7 @@ You can set the required properties in the inherited render function
       // let key = dataKeys[indexKey];
       // let value = dataset[key];
       // data[key] = value;
-      // HelloElement.render({key:value});
+      // HelloElement.render(data);
       // <h3 data-name="world">Hello world</h3>
     </script>
 </body>
