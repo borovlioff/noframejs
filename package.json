@@ -1,5 +1,5 @@
 {
-  "name": "element",
+  "name": "noframejs",
   "version": "1.0.0",
   "description": "A simple element that turns into html, with the function of preloading data, and reloading html",
   "main": "dist/Element.js",
@@ -7,16 +7,20 @@
     "start": "snowpack dev",
     "build": "snowpack build"
   },
-  "keywords": ["dom","js","js to html"],
+  "keywords": [
+    "dom",
+    "js",
+    "js to html"
+  ],
   "author": {
     "name": "Aleksandr",
     "email": "borovioff@ya.ru"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git://github.com/borovlioff/Element"
-      },
-      "homepage": "https://github.com/borovlioff/Element#readme",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/borovlioff/Element"
+  },
+  "homepage": "https://github.com/borovlioff/Element#readme",
   "license": "ISC",
   "devDependencies": {
     "@snowpack/plugin-typescript": "^1.2.1",

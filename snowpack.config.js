@@ -16,6 +16,6 @@ module.exports = {
   devOptions: {
   },
   buildOptions: {
-    out:'dist'
+    out:'./'
   },
 };
