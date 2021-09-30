@@ -1,4 +1,4 @@
-declare class Component {
+export declare class Component {
     node: HTMLElement | any;
     constructor():void
   
@@ -12,4 +12,3 @@ declare class Component {
   
     render(...args: any[]):HTMLElement;
   }
-  
