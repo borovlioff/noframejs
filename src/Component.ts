@@ -9,11 +9,13 @@ export class Component {
    querySelectorAll({ selector }: { selector: string }) {
     if (selector) {
       let nodes = document.body.querySelectorAll(selector);
+      let listNode:any[] = []
       for (let indexNode = 0; indexNode < nodes.length; indexNode++) {
         let node = nodes[indexNode] as HTMLElement;
-        this.touch({ node: node });
+        let newNode = this.touch({ node: node });
+        listNode.push(newNode);
       }
-      return nodes;
+      return listNode;
     }
   }
 
