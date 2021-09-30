@@ -7,11 +7,13 @@ export class Component {
   querySelectorAll({selector}) {
     if (selector) {
       let nodes = document.body.querySelectorAll(selector);
+      let listNode = [];
       for (let indexNode = 0; indexNode < nodes.length; indexNode++) {
         let node = nodes[indexNode];
-        this.touch({node});
+        let newNode = this.touch({node});
+        listNode.push(newNode);
       }
-      return nodes;
+      return listNode;
     }
   }
   touch({node}) {
