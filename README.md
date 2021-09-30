@@ -5,18 +5,18 @@
 Import the main class and inherit into your component.
 
 ```js
-import { Element } from "./Element";
+import { Component } from "./Component";
 
-export class HelloElement extends Element {
+export class HelloElement extends Component {
 }
 ```
 
 Put in the render function the implementation of creating your component
 
 ```js
-import { Element } from "./Element";
+import { Component } from "./Component";
 
-export class HelloElement extends Element {
+export class HelloElement extends Component {
  render({name:"world"}){
  this.node = document.createElement(`h3`);
  this.node.textContent = `Hello ${name}`;

@@ -9,7 +9,7 @@
 <body>
     <h1 data-text="bro" data-type="hello"></h1>
     <script type="module">
-        import {Component} from './Component';
+        import {Component} from './Component.js';
         class HelloWordlElement extends Component{
             render({text}){
                 if(!this.node){this.node = document.createElement('h1');}
